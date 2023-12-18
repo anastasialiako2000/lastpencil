@@ -51,22 +51,22 @@ while(totalpens != -1):
             totalpens -= botans
             print(totalpens*"|")
     else:
-        ans = (input("Anastasia's turn! ")) #paikths bazei timh
+        ans = (input("Anastasia's turn! ")) #player enters a value
         check = ans.isnumeric()
-        while(check==False): # an den einai noumero
+        while(check==False): # if it is not a number
             ans = (input("Possible values: '1', '2' or '3' "))
             check = ans.isnumeric()
        # ans = int(ans)
-        while(ans!= "1" and ans!= "2" and ans!= "3"):   # an den einai 1,2,3
+        while(ans!= "1" and ans!= "2" and ans!= "3"):   # if it is not 1,2,3
             ans = (input("Possible values: '1', '2' or '3' "))
             check = ans.isnumeric()
-        while(check==False): # an den einai noumero
+        while(check==False): 
             ans = (input("Possible values: '1', '2' or '3' "))
             check = ans.isnumeric()
 
         ans = int(ans)
 
-        while(int(totalpens) - int(ans) <0): #an parabazei polla
+        while(int(totalpens) - int(ans) <0): #player enters many values
             ans = input("Too many pencils were taken ")
 
         while(int(ans)== int(totalpens)):
